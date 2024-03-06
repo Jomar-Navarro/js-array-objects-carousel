@@ -40,15 +40,20 @@ const images = [
 ];
 
 // ItemsWrapper mi stampa il tag img la le immagini dell'array con le sua apposita classe hide
-for (let i = 0; i < images.length; i++) {
-  let img = images[i];
-  itemsWrapper.innerHTML += `
-  <img class="img hide" src="${img}" alt="#">
-  `;
-  thumbWrapper.innerHTML += `
-  <img class="thumb" src="${img}" alt="#">
-  `;
-}
+// for (let i = 0; i < images.length; i++) {
+//   let img = images[i];
+//   itemsWrapper.innerHTML += `
+//   <img class="img hide" src="${img}" alt="#">
+//   `;
+//   thumbWrapper.innerHTML += `
+//   <img class="thumb" src="${img}" alt="#">
+//   `;
+// }
+
+images.forEach((image, index) => {
+  console.log(image);
+})
+
 
 // Le variabili Hide e active;
 const itemsCollector = document.getElementsByClassName('img');
