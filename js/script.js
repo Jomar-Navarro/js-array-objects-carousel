@@ -99,7 +99,7 @@ function myImg() {
   
   itemsCollector[counterImg].classList.remove('hide');
   titleCollector[counterImg].classList.remove('hide');
-descriptionCollector[counterImg].classList.remove('hide');
+  descriptionCollector[counterImg].classList.remove('hide');
 
 
   // Mi aggiunge Active al click della freccia in alto;

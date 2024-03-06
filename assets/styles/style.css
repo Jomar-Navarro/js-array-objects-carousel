@@ -5,11 +5,12 @@
 }
 
 .main-wrapper{
+  display: flex;
   height: 100vh;
   background-color: #001829;
-  display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .slider{
@@ -42,7 +43,8 @@
 
 .btn-arrow{
   position: absolute;
-  right: 50%;
+  right: 0;
+  left: 92%;
   width: 30px;
   height: 30px;
   background-color: rgba(255, 255, 255, 0.5);
@@ -97,4 +99,8 @@
   top: 0;
   padding-top: 50px;
   padding-right: 20px;
+}
+
+.buttons{
+  margin-top: 10px;
 }
