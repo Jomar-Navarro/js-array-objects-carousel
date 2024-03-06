@@ -22,7 +22,7 @@ const images = [
 
   {
     photo: 'assets/img/03.webp',
-    title: 'Fortinite',
+    title: 'Fortnite',
     text: 'lorem',
   },
 
@@ -40,20 +40,15 @@ const images = [
 ];
 
 // ItemsWrapper mi stampa il tag img la le immagini dell'array con le sua apposita classe hide
-// for (let i = 0; i < images.length; i++) {
-//   let img = images[i];
-//   itemsWrapper.innerHTML += `
-//   <img class="img hide" src="${img}" alt="#">
-//   `;
-//   thumbWrapper.innerHTML += `
-//   <img class="thumb" src="${img}" alt="#">
-//   `;
-// }
+images.forEach(img => {
+  itemsWrapper.innerHTML += `
+  <img class="img hide" src="${img.photo}" alt="#"> `
 
-images.forEach((image, index) => {
-  console.log(image);
+  thumbWrapper.innerHTML += `
+  <img class="thumb" src="${img.photo}" alt="#">`
 })
 
+console.log(images);
 
 // Le variabili Hide e active;
 const itemsCollector = document.getElementsByClassName('img');
