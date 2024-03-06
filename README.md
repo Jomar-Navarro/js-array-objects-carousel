@@ -33,4 +33,4 @@ Aggiungere bottoni di start/stop e di inversione del meccanismo di autoplay.
 ## SVOLGIMENTO
 
 1.  Creazione dell'array di oggetti;
-2.  
+2.  Creo un Ciclo forEach
